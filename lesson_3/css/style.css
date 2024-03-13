@@ -1,0 +1,61 @@
+@import url("reset.css");
+
+header h1 {
+    color: rgb(239, 137, 13);
+}
+
+h2 {
+    color: rgb(8, 8, 247);
+}
+
+h3 {
+    color: rgb(16, 5, 78);
+}
+
+.main_info h2 {
+    color: #dc1f1f;
+}
+
+p span {
+    color: rgb(48, 208, 23);
+}
+
+.main_info ul {
+    color: rgb(226, 36, 219);
+}
+
+#main_fact_id {
+    color: rgb(224, 25, 28);
+}
+
+li[class="main_fact_item"] {
+    color: rgb(12, 184, 222);
+}
+
+.main_location_title~p {
+    color: rgb(189, 116, 22);
+}
+
+.main_location_title+p {
+    color: rgb(206, 221, 46);
+}
+
+.main_photo h2 {
+    color: rgb(141, 126, 154);
+}
+
+.main_climat p {
+    color: aqua;
+}
+
+.main_vacation>h2 {
+    color: rgb(15, 232, 123);
+}
+
+.footer * {
+    color: rgb(198, 48, 48);
+}
+
+.footer h3 {
+    color: rgb(53, 213, 53);
+}
