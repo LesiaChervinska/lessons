@@ -1,0 +1,38 @@
+/* гулг шрифт */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');/* google fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Ysabeau+Infant:regular,700,100italic&display=swap");   /*vs google fonts */
+
+@font-face {                                                                                                  /*local fonts */
+    font-family:"ConstellationTLPro";                                                               
+    src: url(../fonts/constellationTLPro-BoldIt.woff2) format("woff2"),
+    url(../fonts/constellationTLPro-BoldIt.woff) format("woff");
+    font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+    font-family:"ConstellationTLPro";
+    src: url(../fonts/constellationTLPro-Echo.woff2) format("woff2"),
+    url(../fonts/constellationTLPro-Echo.woff) format("woff");
+    font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+    font-family:"ConstellationTLPro";
+    src: url(../fonts/constellationTLPro-It.woff2) format("woff2"),
+    url(../fonts/constellationTLPro-It.woff) format("woff");
+    font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+    font-family:"Proxima Nova";
+    src: url(../fonts/anyConv.com__proximanova_regular.woff) format("woff");
+    font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}

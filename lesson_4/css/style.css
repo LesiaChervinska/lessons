@@ -1,0 +1,164 @@
+@import url("fonts.css");
+/* reset */
+@import url("reset.css");
+
+
+body{
+    font-family: "Edu NSW ACT Foundation", serif;
+    font-size: 18px;
+}
+
+p{
+    line-height: 166.666667%; /* 40/24 */
+}
+h1{
+    font-family: "ConstellationTLPro",sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 200%; /* 64/32 */
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0.6px  #868383 ;
+}
+
+h3{
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    line-height: 166.666667%; /* 40/24 */
+}
+
+.header h2{
+    font-family: "ConstellationTLPro",sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%; /* 48/32 */
+    text-align: center;
+}
+
+.header  li{
+    font-family: "ConstellationTLPro",sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 177.777778%; /* 32/18 */
+    text-shadow:-1px -1.3px 1px  #817d7d ;
+}
+
+.main-about h3{
+    color:#d51111;
+}
+.main-about h3{
+    line-height: 177.777778%; /* 32/18 */
+}
+.main-about span{
+    font-family: "ConstellationTLPro",sans-serif;
+    font-weight: 900;
+    text-decoration: underline dashed rgb(2, 39, 54);
+}
+
+.main-geography h3{
+    color: #433228;
+    text-decoration: underline black;
+}
+
+.main-period h3{
+    text-decoration:overline rgb(49, 10, 207);
+}
+.main-geography p,
+.main-history p {
+    font-family: "Ysabeau Infant",  sans-serif;
+    font-weight: 100;
+}
+.main-info h3{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(233, 74, 74) ;
+    font-style: italic;
+}
+.main-info ul{
+    text-align: center;
+}
+.main-info li{
+    text-align: center;
+    font-size: 18px;
+    line-height: 177.777778%; /* 32/18 */
+    color:rgb(62, 62, 57);
+    text-decoration: underline rgb(118, 62, 42);
+}
+.main-history h3{
+    text-decoration: underline dashed;
+}
+.main-history ol{
+    text-align: center;
+    line-height: 188.888889%; /* 34/18 */
+    text-transform: uppercase;
+}
+.main-kitchen p{
+    word-spacing: 10px ;  
+    color:#585ef4
+}
+.main-choose-bed h2{
+    color: #2b2929;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Proxima Nova",sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+}
+.main-choose-bed p{
+    color: #2b2929;
+    font-size: 16px;
+    font-family: "Proxima Nova",sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+.main-living-room{
+    font-family: "Proxima Nova",sans-serif;
+    font-weight: 400; 
+}
+
+.main-living-img{
+    text-align: center;
+}
+
+.main-living-room h2{
+    color: #2b2929;
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+}
+.main-living-room p{
+    color: #2b2929;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.main-living-info  h3{
+    color: #2b2929;
+    font-size: 20px;
+    font-family: "Proxima Nova",sans-serif;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.main-living-info li{
+    color: #2b2929;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.footer h4{
+    color:rgb(43, 24, 211);
+    font-size: 16px;
+    line-height: 200%; /* 32/16 */
+}
+.footer ul>li {
+    color:rgb(24, 122, 192);  
+    line-height: 177.777778%; /* 32/18 */
+}
+.footer ul>li>a {
+    text-decoration: underline rgb(14, 10, 2);
+}
