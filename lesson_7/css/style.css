@@ -1,0 +1,525 @@
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Exo:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:500&display=swap");
+/* reset */
+@import url("reset.css");
+
+header{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+
+}
+header ul li {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 110%;
+    font-family: "Exo",sans-serif;
+    text-align: center;
+}
+header ul li:hover {
+    color:red;
+}
+
+header ul li:not(:last-child){
+    margin-right: 15px;
+}
+
+.train > *{
+    margin-bottom: 25px;
+}
+.train{
+    padding-left: 20px;
+    border: 1px solid black;
+}
+
+
+.train-block-1{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #d71313;
+    border-radius: 50%;
+}
+.train-block-1:hover +.train-block-2{
+    display: inline-block;
+
+}
+.train-block-2{
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: #40974a;
+    border-radius: 50%;
+}
+.train-block-3{
+    width: 200px;
+    height: 200px;
+    background-color: #b6e811;
+    border-radius: 50%;
+}
+.train-block-3:hover{
+    box-shadow: 2px 2px 15px #1e3f0f;
+}
+
+.train-block-4:hover p span{
+    color:rgba(208, 1, 1, 0.833);
+    text-decoration: underline;
+}
+.train-block-4 a:focus-visible {
+    color:rgb(30, 0, 255);
+    font-style: italic;
+}
+
+.train-block-5 a{
+    padding: 15px 25px;
+    background-color: #09baeb;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.train-block-5 a:hover{
+    background: #05f9f9;
+    box-shadow: 1px 1px 4px #070d1b;
+}
+.train-block-5 a:focus{
+    background: #015fda;
+}
+.train-block-5 :last-child{
+    background: #e398cb;
+}
+.train-block-5 :last-child:hover{
+    background: linear-gradient(90deg, #000000,#ffffff);
+    color:floralwhite;
+}
+.train-p:focus{
+    outline: 2px solid red;
+}
+.train-text ul li{
+    font-size: 18px;
+    line-height: 111.111111%; 
+    padding: 10px 0;
+}
+
+.train-text ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.train-text ul li:first-child{
+    color:red;
+}
+.train-text ul li:first-of-type{
+    background: #d5e386;;
+}
+.train-text ul li:last-child{
+    color:rgb(201, 227, 9);
+}
+.train-text ul li:last-of-type{
+    background: #4fbeab;;
+}
+.train-text ul li:nth-child(3){
+    background-color: #13d516;
+}
+.train-text ul li:nth-child(2n){
+    font-style: italic;
+}
+.train-text ul li:nth-child(4n + 1){
+    border: 3px solid pink;
+   
+}
+.train-text ul li:nth-child(even){
+    outline: 4px solid rgb(118, 128, 6);
+}
+.train-text ul li:nth-child(odd){
+    outline: 4px solid rgb(40, 2, 230);
+}
+.train-text ul li:has(>span){
+    font-weight: 700;
+}
+.train-block-5 :not(:last-child){
+    outline: 3px solid black;
+}
+.train-text2 ul li{
+    font-size: 18px;
+    line-height: 133.333333%; /* 24/18 */
+    padding: 10px;
+}
+.train-text2 ul li::before{
+    content: "";
+    vertical-align: middle;
+    background: url("../img/train/light-mode.svg") 50% 0 no-repeat;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+.train-text2 ul li:hover::before{
+    background-image: url("../img/train/vector.svg");
+}
+.train-text2 ul li::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color:red;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 25px;
+}
+.train-text2 ul li:hover::after{
+    background-color:rgb(30, 255, 0);
+}
+
+.train > *:last-child{
+margin-bottom: 0;
+}
+
+.about-inner >*{
+    margin-bottom: 20px;
+}
+/*****ABOUT *******/
+.about{
+    background: url("../img/about/bg.jpg")  0 0/cover no-repeat;
+    color: #fff;
+    font-family: "Exo",sans-serif;
+}
+
+.about-inner{
+    width: 100%;
+    max-width: 1135px;
+    padding:120px 15px 80px;
+    margin: 0 auto;
+}
+.about-text{
+    text-align: center;
+    max-width: 992px;
+}
+.about-text p{
+    padding: 0 55px;
+    text-transform: capitalize;
+    margin-bottom: 80px;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 116.666667%; 
+    margin-bottom: 40px;
+}
+
+.title::after{
+    content:"";
+    background: linear-gradient(34deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 35%, rgba(36,0,255,1) 100%);
+    height: 2px;  /* якась дивна ситуація,при 1px не видно лінії*/
+    margin: 20px auto;
+    width: 400px;
+    display: block;
+    transition: 1s;
+}
+.title:hover::after{
+    width: 600px;
+}
+.about-bottom h2::after{
+    width: 100%;
+}
+.about-bottom h2:hover::after{
+    background: radial-gradient(circle, rgba(161,180,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,69,69,1) 100%);
+    width: 100%;
+}
+
+.about-text p{
+  font-size: 18px;
+  text-align: center;
+  line-height: 222.222222%; 
+  letter-spacing: -1.2px;
+}
+.about-list{
+    font-size: 0;
+    margin-bottom: 200px;
+} 
+.about-list li{
+    display: inline-block;
+}
+.about-list li:not(:last-child){
+    margin-right: 60px;
+}
+.about-list a {
+    font-size: 20px;
+    font-family: "Orbitron",sans-serif;
+    line-height: 125%; 
+}
+.about-list a::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background:linear-gradient(34deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 35%, rgba(36,0,255,1) 100%);
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 60px;
+}
+
+
+.about-list a:hover::after{
+    background:radial-gradient(circle, rgba(161,180,58,1) 0%, rgba(253,29,29,1) 50%, rgba(252,69,69,1) 100%);
+}
+.about-bottom ul {
+    font-size: 0;
+}
+.about-bottom ul li:not(:last-child){
+    margin-right: 80px;
+}
+.about-bottom ul li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 50%;
+    text-transform: capitalize;
+}
+
+.about-bottom ul li::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.about-bottom ul li:nth-child(1)::before{
+    background: url("../img/about/call.png") no-repeat
+}
+
+.about-bottom ul li:nth-child(2)::before{
+    background: url("../img/about/location.png") no-repeat
+}
+.about-bottom ul li:nth-child(3)::before{
+    background: url("../img/about/call.png") no-repeat
+}
+
+.about-bottom ul li:hover{
+    color: #953ded;
+}
+
+.about-inner >*:last-child{
+    margin-bottom: 0px;
+}
+
+
+/*******room*****/
+.room-inner > * {
+    margin-bottom: 25px;
+}
+.room{
+    color: #2b2929;
+    font-family: "Proxima Nova",sans-serif;
+}
+
+.room-inner{
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 15px 30px;
+}
+.room-title{
+    font-size: 40px;
+    line-height: 120%; 
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.room-inner img{
+    max-width: 1070px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.room-desr{
+    margin-bottom: 40px;
+}
+.room-desr p:not(:last-child){
+    margin-bottom: 30px;
+
+}
+.room-desr p{
+    line-height: 187.5%;
+    letter-spacing: 0;
+    text-transform: none;
+}
+.room-list{
+    margin-bottom:40px;
+    padding: 0 35px 0;
+}
+.room-subtitle{
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.room-list li:not(:last-child){
+    margin-bottom: 20px;
+
+}
+.room-list li{
+    font-weight: 400;
+    line-height: 187.5%; /* 30/16 */
+   
+}
+.room-list li::before{
+    content: "";
+    background: url("../img/room/ok-vector.svg");
+    width: 32px;
+    height:32px;
+    vertical-align: top;
+    margin-left: -35px;
+}
+.room-list li:hover::before{
+    background:  #ffbc578d;
+    border-radius: 50%;
+    
+}
+.room-inner p:last-child{
+    line-height: 187.5%;
+    text-transform: none;
+}
+.room-inner > :last-child {
+    margin-bottom: 0;
+}
+
+
+/*******Game******/
+.game {
+    width: 1030px;
+    margin: 0 auto 50px;
+    padding: 0 15px;
+    max-width: 100%;
+    text-align: initial;
+    font-size: 0;
+    background-color: #d8b9b9;
+
+  }
+  
+  .line-1 {
+    width: 50px;
+    height: 60px;
+    background-color: #f11919;
+  }
+  .line-2 {
+    width: 50px;
+    height: 100px;
+    background-color: blue;
+    visibility: hidden;
+  }
+  .line-3 {
+    width: 150px;
+    height: 20px;
+    background-color: orange;
+    visibility: hidden;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .line-4 {
+    width: 600px;
+    height: 25px;
+    background-color: pink;
+    visibility: hidden;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .line-5 {
+    width: 40px;
+    height: 170px;
+    background-color: gold;
+    display: inline-block;
+    visibility: hidden;
+  }
+  .line-6 {
+    width: 79%;
+    height: 70px;
+    background-color: rebeccapurple;
+    display: block;
+    visibility: hidden;
+  }
+  .line-7 {
+    width: 40px;
+    height: 170px;
+    background-color: yellowgreen;
+    display: inline-block;
+    visibility: hidden;
+  }
+  
+  .line-8 {
+    width: 400px;
+    height: 40px;
+    background-color: brown;
+    display: inline-block;
+    visibility: hidden;
+  }
+  .line-9 {
+      width: 50px;
+      height: 80px;
+      background-color: navy;
+      display: inline-block;
+      visibility: hidden;
+      vertical-align: middle;
+    }
+    
+    .line-10{
+        visibility: hidden;
+    }
+    .line-10::after{
+        display: block;
+        width: 100%;
+        height: 604px;
+        content:"";
+        background:url("../img/homer.jpg") 50% 0 no-repeat;
+        
+    }
+  
+  .line-1:hover + .line-2,
+  .line-2:hover {
+    visibility: visible;
+  }
+  .line-2:hover + .line-3,
+  .line-3:hover {
+    visibility: visible;
+  }
+  .line-3:hover + .line-4,
+  .line-4:hover {
+    visibility: visible;
+  }
+  .line-4:hover + .line-5,
+  .line-5:hover {
+    visibility: visible;
+  }
+  .line-5:hover + .line-6,
+  .line-6:hover {
+    visibility: visible;
+  }
+  .line-6:hover + .line-7,
+  .line-7:hover {
+    visibility: visible;
+  }
+  .line-7:hover + .line-8,
+  .line-8:hover {
+    visibility: visible;
+  }
+  .line-8:hover + .line-9,
+  .line-9:hover {
+    visibility: visible;
+  }
+  .line-9:hover + .line-10,
+  .line-10:hover {
+    visibility: visible;
+  }
+.line-9 + .line10,
+.line-10:hover{
+    visibility: visible;
+}
+footer{
+    text-align: center;
+    background-color: #d8d3d3;
+}
+
+footer h3{
+    font-size: 20px;
+    line-height: 110%;
+    font-family: "Exo",sans-serif;
+    padding: 30px 10px;
+} 
