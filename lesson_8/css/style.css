@@ -1,0 +1,71 @@
+
+/* reset */
+@import url("reset.css");
+body{
+    background: #c3b2b2
+}
+.container{
+    width: 100%;
+    max-width: 1305px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: #ede2e2;
+
+}
+main > *{
+    margin-bottom: 40px;
+}
+span{
+    font-size: 18px;
+    line-height: 133.333333%;
+}
+header{
+    margin-bottom: 30px;
+}
+header h1{
+    font-size: 30px;
+    line-height: 166.666667%;
+    color:black;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.icons div:not(:last-child),
+.icon-content div:not(:last-child){
+    margin-bottom: 20px;
+}
+.icons div img,
+.icon-content img{
+    max-width: 50px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.icons div span,
+.icon-content span{
+    padding-left: 25px;
+    
+}
+
+.content-img img{
+vertical-align: middle;
+max-width: 350px;
+}
+
+.icons div:hover span,
+.icon-content div:hover span,
+.content-img div:hover span{
+    text-shadow: 2px 1px 2px #da1212;
+    text-decoration: underline 1px rgb(116, 76, 17);
+}
+
+footer h4{
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+main >*:last-child{
+    margin-bottom: 0px;
+}
