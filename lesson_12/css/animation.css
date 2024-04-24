@@ -1,0 +1,103 @@
+@keyframes car-move {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-800px);
+  }
+}
+@keyframes car-move-2 {
+  0% {
+    transform: translateX(-800px);
+  }
+  100% {
+    transform: translateX(-3000px);
+  }
+}
+@keyframes glass-down {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(60px);
+  }
+}
+
+@keyframes smoke {
+  100% {
+    box-shadow: -40px -40px 50px 50px rgb(255, 237, 237);
+    transform: translateY(-20px);
+    transform: skew(1.2);
+  }
+}
+@keyframes stop {
+  100% {
+    box-shadow: 40px 0px 50px 30px rgb(228, 16, 16);
+  }
+}
+@keyframes headlight {
+  100% {
+    box-shadow: -80px 10px 50px 60px rgb(253, 223, 157);
+  }
+}
+@keyframes move-whell {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flowers {
+  0% {
+    transform: scale(1);
+    transform: translate(-50px, 5px);
+    opacity: 1;
+  }
+
+  99% {
+    transform: scale(2);
+    transform: translate(-600px, 0px);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+    transform: translate(-600px, 0px);
+  }
+}
+
+@keyframes woman-go {
+  0% {
+    transform: translateX(100px);
+  }
+
+  99% {
+    transform: translate(800px, -200px);
+    display: none;
+  }
+  100% {
+    z-index: -1;
+    display: none;
+  }
+}
