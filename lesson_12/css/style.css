@@ -1,0 +1,343 @@
+/* reset */
+@import url("reset.css");
+@import url("animation.css");
+
+body {
+  background: url("../img/bg-wrap.jpg") 0 0 / cover no-repeat;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 5px;
+  margin: 0 auto;
+  overflow: clip;
+  min-height: 100%;
+}
+.main {
+  position: relative;
+  min-height: 100vh;
+}
+
+.car {
+  position: absolute;
+  padding: 50px;
+  top: 70%;
+  left: 100%;
+  animation: car-move 5s ease-in-out forwards, car-move-2 4s 15s forwards;
+}
+.car__hood {
+  position: relative;
+}
+.car__top-hood {
+  position: absolute;
+  width: 175px;
+  height: 80px;
+  background-color: #4b2727;
+  transform: skew(-5deg);
+  border-radius: 30px 0 0 0;
+}
+.car__bottom-hood {
+  background-color: #3a1a1f;
+  width: 195px;
+  height: 70px;
+  top: 23px;
+  left: -20px;
+  position: absolute;
+  border-radius: 30px 80% 0 0;
+}
+.wheel__box {
+  position: absolute;
+  background-color: rgba(240, 255, 255, 0);
+  width: 110px;
+  height: 90px;
+  border-radius: 50%;
+  top: 9px;
+  left: 26px;
+  transform: skew(6deg);
+  border-top: 15px solid #231b04;
+  border-right: 1px solid#231b04;
+  border-left: 1px solid#231b04;
+}
+
+.wheel__car-whell {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(9, 10, 9);
+  transform: skew(-6deg);
+  left: 3px;
+}
+.wheel__car-disk {
+  position: absolute;
+  background-color: #eceaea61;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  top: 23px;
+  left: 27px;
+  border: 11px dotted;
+  animation: move-whell 5s linear;
+}
+
+.body-car__top {
+  width: 180px;
+  height: 65px;
+  position: absolute;
+  background-color: #4b2727;
+  left: 235px;
+  top: -15px;
+  transform: skew(-38deg);
+  border-radius: 21px 50% 0 0;
+}
+.body-car__bottom {
+  position: absolute;
+  width: 458px;
+  height: 93px;
+  background-color: #4b2727;
+  left: 220px;
+  top: 50px;
+  border-radius: 0 70% 0 0;
+  z-index: 3;
+}
+.body-car__back {
+  position: absolute;
+  width: 212px;
+  height: 118px;
+  background-color: #4b2727;
+  left: 377px;
+  top: -15px;
+  transform: skewX(59deg);
+  border-radius: 13px 64% 26px 0;
+}
+.body-car__glass-top-1 {
+  position: absolute;
+  width: 110px;
+  height: 52px;
+  background-color: #bac9d0;
+  left: 239px;
+  top: -4px;
+  border-radius: 31% 80% 0 15px;
+  transform: skewX(-34deg);
+}
+.body-car__glass-top-2 {
+  position: absolute;
+  width: 50px;
+  height: 41px;
+  background-color: #bac9d0;
+  left: 303px;
+  top: 7px;
+  border-radius: 0 30% 36% 0;
+  transform: skewX(34deg);
+}
+
+.body-car__back-glass {
+  position: absolute;
+  width: 95px;
+  height: 40px;
+  background-color: #bac9d0;
+  left: 380px;
+  top: 4px;
+  border-radius: 11px 157% 8px 52px;
+  z-index: 3;
+}
+.body-car__box-glass {
+  position: absolute;
+  width: 265px;
+  height: 66px;
+  left: 232px;
+  top: -12px;
+  border-radius: 49px 90% 10px 10px;
+  transform: skew(-20deg);
+  border: 2px solid #fffffba9;
+  z-index: 3;
+}
+
+.car__back-whell {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(9, 10, 9);
+  left: 476px;
+  top: 89px;
+}
+
+.car__disk-back {
+  position: absolute;
+  background-color: #eceaea61;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  top: 25px;
+  left: 25px;
+  border: 11px dotted;
+  animation: move-whell 5s linear;
+}
+.car__wing {
+  position: absolute;
+  width: 216px;
+  height: 67px;
+  background-color: #3a0b13;
+  border-radius: 50% 72% 10px 10px;
+  top: -5px;
+  left: -14px;
+  z-index: 2;
+}
+.car__threshold {
+  position: absolute;
+  width: 316px;
+  height: 20px;
+  top: 131px;
+  left: 163px;
+  background: #3a0b13;
+  transform: skew(22deg);
+  border-radius: 11% 66% 7% 26%;
+}
+.car__access {
+  position: absolute;
+  width: 562px;
+  height: 1px;
+  top: 69px;
+  left: 60px;
+  background-color: #fffffba9;
+  z-index: 5;
+}
+.body-car__holder-mirror {
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  left: 0px;
+  top: 19px;
+  background-color: #edf5f8;
+  transform: skew(10deg);
+}
+.body-car__holder-mirror::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 70px;
+  animation: smoke 6s 4s;
+}
+.body-car__mirror {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 0px;
+  top: -7px;
+  border-radius: 50%;
+  background-color: #edf5f8;
+  transform: skew(-35deg);
+}
+.car__knob {
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  top: 65px;
+  left: 334px;
+  background-color: #c2c3c2;
+  border-radius: 5px;
+  z-index: 5;
+}
+.body-car__door {
+  position: absolute;
+  top: -8px;
+  height: 139px;
+  left: 233px;
+  width: 136px;
+  border: 2px solid #101010a2;
+  border-radius: 40% 30% 10% 5%;
+}
+.body-car__glass {
+  position: absolute;
+  top: -3px;
+  left: 1px;
+  width: 128px;
+  height: 62px;
+  background-color: #bac9d0;
+  border-radius: 53px 38% 2px 2px;
+  animation: glass-down 3s 5s forwards;
+  z-index: 2;
+}
+.car__lock {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 79px;
+  left: 347px;
+  background: #bac9d0;
+  border-radius: 50%;
+  z-index: 5;
+}
+.car__lock::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 70px;
+  height: 90px;
+  background: url("../img/flowers.png") 0 0 / 100% auto no-repeat;
+  opacity: 0;
+  animation: flowers 4s 7s ease-in forwards;
+}
+.car__stop {
+  position: absolute;
+  top: 5px;
+  left: 197px;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.car__stop::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: stop 2s 4s;
+}
+.car__headlight {
+  position: absolute;
+  width: 16px;
+  height: 27px;
+  background-color: #c6cbc5;
+  top: 35px;
+  left: -200px;
+  border-radius: 50% 0 0 50%;
+  transform: skew(-8deg);
+}
+.car__headlight::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  animation: headlight 2s 1s forwards;
+}
+.body-car__door::after {
+  content: "";
+  position: absolute;
+  width: 106px;
+  height: 81px;
+  background: url(../img/img-car.jpg) 0 0 / 100% auto no-repeat;
+  left: 10px;
+  top: -4px;
+  border-radius: 61% 21% 7% 0%;
+}
+.main__girl {
+  position: absolute;
+  bottom: -20%;
+  left: -19%;
+  animation: woman-go 5s 10s forwards;
+}
+.main__girl::before {
+  content: "";
+  position: relative;
+  width: 50px;
+  height: 500px;
+  top: 0;
+  left: 400px;
+  background: url("../img/heart.png") 0 0 / contain no-repeat;
+  animation: heart 5s 6s;
+  opacity: 0;
+}
