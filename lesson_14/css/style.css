@@ -205,7 +205,6 @@ textarea:focus {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex: 0 0 142px;
   font-size: 19px;
   font-weight: 600;
   line-height: 126.315789%;
