@@ -1,0 +1,51 @@
+
+#top-link{
+    color:rgb(247, 223, 7);
+}
+.paint-title{
+    color: blue;
+}
+.paint-link{
+    color:rgb(163, 248, 43);
+}
+.color-item{
+    color:rgb(1, 136, 253);
+}
+
+[class*="-hue"],
+[class*="title"]{
+    color:rgb(125, 6, 62);
+}
+.entry p{
+    color:rgb(77, 188, 248);
+}
+
+.variation > p{
+    color:rgb(10, 120, 255);
+}
+.variation-text + p{
+    color: rgb(255, 16, 16);
+}
+
+.technics .technics-list{
+    color:rgb(255, 7, 197);
+}
+.technics-link1.technics-link2 {
+    color:rgb(34, 72, 0);
+}
+.link-top{
+    color:rgb(14, 252, 252);
+}
+
+.train-block *{
+    color:rgb(250, 142, 1);
+}
+.train-title + p{
+color:rgb(219, 233, 113);
+}
+.holder > p{
+    color: rgb(246, 178, 220);
+}
+.holder ~ p {
+color:rgb(54, 255, 4);
+}
