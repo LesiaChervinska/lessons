@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- локальне підключення шрифтів -->
+  <link rel="stylesheet" href="css/fonts.css">
+  <!-- підключення через гугл фонтс -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&display=swap"
+    rel="stylesheet">
+  <!-- підключення через плагін Better Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono:regular&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Урок 4</title>
+</head>
+
+<body>
+  <header class="header" id="top">
+    <ul class="header-list">
+      <li class="header-item">
+        <a href="#box-font" class="header-link">Шрифти та їх підключення</a>
+      </li>
+      <li class="header-item">
+        <a href="#prop-text" class="header-link">Товщини шрифтів</a>
+      </li>
+      <li class="header-item">
+        <a href="#properties-text" class="header-link">CSS-властивості тексту</a>
+      </li>
+      <li class="header-item">
+        <a href="#block-grow" class="header-link">Приклад з макету</a>
+      </li>
+    </ul>
+  </header>
+
+  <!-- main-->
+  <main class="page">
+    <div class="train">
+      <div class="font-box" id="box-font">
+        <h1>Типи підключення шрифтів</h1>
+        <div class="local-font">
+          <h2>Локальні шрифти</h2>
+          <p>Локальні шрифти використувуються,коли їх не має на сервісі <a class="font-link"
+              href="https://fonts.google.com/" target="_blank">fonts google</a>.Для прикладу розглянемо шрифт під назвою
+            Futura.</p>
+          <ul class="local-list">
+            <li class="local-item-bold">Шрифт Futura товщиною 700 зі стандартим стилем font-style</li>
+            <li class="local-item-light">Шрифт Futura товщиною 300 зі стандартим стилем font-style</li>
+            <li class="local-item-medium">Шрифт Futura товщиною 500 зі стандартим стилем font-style</li>
+            <li class="local-item-mediumoblique">Шрифт Futura товщиною 500 із стилем нахилення літер font-style oblique
+            </li>
+          </ul>
+        </div>
+        <div class="external-font">
+          <h2>Підключення шрифту всередині файлу HTML за допомогою сервісу Google fonts</h2>
+          <p> <a class="font-link" href="https://fonts.google.com/" target="_blank"> Google fonts</a> це безкоштовний
+            онлайн-каталог від компанії Google, який надає доступ до величезної бібліотеки відкритих шрифтів для
+            використання на вебсайтах, у мобільних додатках та дизайні</p>
+          <ul class="external-list">
+            <li class="external-item-normal">Шрифт Caveat товщиною 400 зі стандартим стилем font-style</li>
+            <li class="external-item-medium">Шрифт Caveat товщиною 500 зі стандартим стилем font-style</li>
+            <li class="external-item-semibold">Шрифт Caveat товщиною 600 зі стандартим стилем font-style</li>
+            <li class="external-item-bold">Шрифт Caveat товщиною 700 зі стандартим стилем font-style</li>
+          </ul>
+        </div>
+        <div class="inter-font">
+          <h2>Підлючення шрифту через файл css та плагін Better Google Fonts for VS Code</h2>
+          <p>Варіант підключення шрифту за допомогою плагіну дозволяє швидко та зручно дістати шрифт та використати його
+            на сторінці </p>
+          <p>Підключення шрифту через файл css - додатковий варіант,як можна підключти за допомогою сервісу Google fonts
+            .</p>
+          <ul class="inter-list">
+            <li class="inter-item-medium">Варіант підключення через @import в файл css - Orbitron, товщина 500 </li>
+            <li class="inter-item-bold">Варіант підключення через @import в файл css - Orbitron, товщина 700</li>
+            <li class="inter-item-regular">варіант підключення через плагін Better Google Fonts for VS Code в тезі head
+              шрифт Fira Mono,товщина 400</li>
+          </ul>
+        </div>
+      </div>
+      <div class="font-prop" id="properties-text">
+        <h2>Товщини шрифтів</h2>
+        <ul class="font-prop-list">
+          <li class="font-prop-item font-thin">Надтонкий Thin / Hairline 100 </li>
+          <li class="font-prop-item font-extra-light"> Дуже світлий Extra Light / Ultra Light 200 </li>
+          <li class="font-prop-item font-ligth">Світлий Light 300 </li>
+          <li class="font-prop-item font-regular">Звичайний Normal / Regular 400 </li>
+          <li class="font-prop-item font-medium">Середній Medium 500</li>
+          <li class="font-prop-item font-semi-bold">Напівжирний Semi Bold / Demi Bold 600</li>
+          <li class="font-prop-item font-bold">Жирний Bold 700 </li>
+          <li class="font-prop-item font-extra-bold"> Дуже жирний Extra Bold / Ultra Bold 800</li>
+          <li class="font-prop-item font-black">Чорний / Важкий Black / Heavy 900</li>
+        </ul>
+      </div>
+      <div class="text-prop" id="prop-text">
+        <h3>CSS-властивості тексту</h3>
+        <div class="text-prop-color">
+          <h4>Встановлення кольору тексту color</h4>
+          <ul class="color-list">
+            <li class="color-type-item1">словесний запис (red, blue, black):</li>
+            <li class="color-type-item2">шестизначний запис</li>
+            <li class="color-type-item3">запис rgba з встановленою прозорістю</li>
+          </ul>
+        </div>
+        <div class="text-prop-leveling">
+          <h4>Встановлення вирівнювання тексту text-align: </h4>
+          <ul class="text-leveling-list">
+            <li class="text-leveling-item1">center - вирівнює по центру</li>
+            <li class="text-leveling-item2">left- вирівнює по лівому краю</li>
+            <li class="text-leveling-item3">right- вирівнює по правому краю</li>
+            <li class="text-leveling-item4">justify- вирівнює текст по ширині об'єкта в якому він знаходиться,
+              автоматично змінюючи пробіли між словами.вирівнює текст по ширині об'єкта в якому він знаходиться,
+              автоматично змінюючи пробіли між словами.вирівнює текст по ширині об'єкта в якому він знаходиться,
+              автоматично змінюючи пробіли між словами.</li>
+          </ul>
+        </div>
+        <div class="text-prop-decor">
+          <h4>Встановлення декорування тексту text-decoration.Базові значення властивості text-decoration</h4>
+          <ul class="text-decor-list">
+            <li class="text-decor-item1"> line-through - закреслює текст</li>
+            <li class="text-decor-item2"> overline - лінія над текстом</li>
+            <li class="text-decor-item3">none - (за замовченням) скасовує встановлений раніше параметр</li>
+            <li class="text-decor-item4"> underline - лінія під текстом</li>
+            <li class="text-decor-item5"> text-decoration-thickness - встановлює товщину лінії </li>
+            <li class="text-decor-item6"> text-underline-offset встановлює відстань від тексту до лінії</li>
+          </ul>
+        </div>
+        <div class="text-prop-shadow">
+          <h4>Встановлення text-shadow тіні для тексту</h4>
+          <ul class="text-shadow-list">
+            <li class="text-shadow-item1">Тінь для тексту по осі Y </li>
+            <li class="text-shadow-item2">Тінь для тексту по осі - Y </li>
+            <li class="text-shadow-item3">Тінь для тексту по осі X </li>
+            <li class="text-shadow-item4">Тінь для тексту по осі -X </li>
+            <li class="text-shadow-item5">Тіні для Х та У </li>
+            <li class="text-shadow-item6">Мультитіні </li>
+          </ul>
+        </div>
+        <div class="text-prop-register">
+          <h4>Встановлення типу літер text-transform </h4>
+          <ul class="text-register-list">
+            <li class="text-register-item1">none -за замовчанням</li>
+            <li class="text-register-item2">lowercase - усі літери в нижньому регістрі</li>
+            <li class="text-register-item3">uppercase- усі літери в верхньому регістрі </li>
+            <li class="text-register-item4">capitalize - кожне слово починається з великої літери</li>
+          </ul>
+        </div>
+        <div class="text-line-height">
+          <h4>Визначає міжрядковий інтервал line-height</h4>
+          <ul class="line-height-list">
+            <li class="line-height-item1">Висота рядка 112.5%</li>
+            <li class="line-height-item2">Висота рядка 137.5% </li>
+            <li class="line-height-item3">Висота рядка 200%;</li>
+          </ul>
+        </div>
+        <div class="text-letter-space">
+          <h4>Встановлення інтервалу між літерами letter-spacing </h4>
+          <ul class="letter-space-list">
+            <li class="letter-space-item1">приклад тектсу з letter-spacing 3px </li>
+            <li class="letter-space-item2">приклад тектсу з letter-spacing 10px</li>
+          </ul>
+        </div>
+        <div class="text-white-space">
+          <h4>Управління пробілами між словами white-space </h4>
+          <ul class="white-space-list">
+            <li class="white-space-item1">nowrap - забороняє переносити (розривати) рядок</li>
+            <li class="white-space-item1">normal - (за замовчанням) не змінює (або скасовує раніше встановлене) значення
+            </li>
+          </ul>
+        </div>
+        <div class="text-word-spacing">
+          <h4>Інтервал між словами word-spacing </h4>
+          <ul class="word-spacing-list">
+            <li class="word-spacing-item1">Приклад інтервалу між словами 10px</li>
+            <li class="word-spacing-item2">Приклад інтервалу між словами 50px</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="grow-block" id="block-grow">
+      <h2 class="grow-title">Grown <span class="grow-span">by Nature</span></h2>
+      <div class="grow-text">We grow our crops naturally. We are a fast-growing <br>agricultural technology company
+        passionate about <br> ensuring food security. We leverage our technology<br>to improve productivity & sales to
+        promote food<br>security for you and your family.</div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-block">
+      <a href="#top" class="footer-link">На початок</a>
+    </div>
+
+  </footer>
+</body>
+
+</html>
