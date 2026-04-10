@@ -1,0 +1,245 @@
+body {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header-list {
+  text-align: center;
+  padding: 15px 0;
+}
+.header li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.info-box h2 {
+  font-size: 24px;
+  line-height: 1.333; /* 32/24 */
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  text-shadow: 2px 3px 3px rgb(58, 4, 4);
+}
+
+.padding-info {
+  margin-bottom: 50px;
+}
+.padding-info > * {
+  margin-bottom: 20px;
+}
+.padding-one {
+  background-color: #fc9ea9;
+  padding: 30px;
+}
+.padding-one div {
+  background-color: #fd434367;
+  padding: 30px;
+}
+.padding-two {
+  background-color: #ffe14b;
+  padding: 30px 0 30px;
+}
+.padding-two div {
+  background-color: #f1a007;
+}
+.padding-three {
+  background-color: #6bf0e0;
+  padding: 30px 20px 50px 10px;
+}
+.padding-three div {
+  background-color: #2b9dee;
+}
+.padding-four {
+  padding-top: 35px;
+  background-color: #bcbcf3;
+  margin-bottom: 0; /****** 0 відступ у останнього ел********/
+}
+.padding-four div {
+  background-color: #7c68e9;
+}
+
+/*******************************margin-info ****************/
+.margin-info {
+  margin-bottom: 50px;
+}
+.margin-info > * {
+  margin-bottom: 20px;
+}
+.margin-one {
+  background-color: #eb37c4;
+  padding: 20px 50px 20px;
+  margin-left: -50px;
+}
+.margin-two {
+  background-color: #de0e0e;
+  padding: 20px;
+  margin-left: 150px;
+}
+.margin-three-first {
+  background-color: #ed727e;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.margin-three {
+  background-color: #8bd415;
+  margin-bottom: 0;
+}
+.margin-three-second {
+  background-color: #ecec13;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/**********************************info-size**************/
+.info-size {
+  margin-bottom: 50px;
+}
+.info-size > * {
+  margin-bottom: 20px;
+}
+.width-size {
+  width: 650px;
+  border: 3px solid rgb(238, 255, 0);
+}
+.width-max {
+  max-width: 650px;
+  border: 2px solid rgb(72, 24, 24);
+}
+.width-min {
+  min-width: 450px;
+  border: 2px solid rgb(11, 2, 185);
+}
+.height-size {
+  border: 2px solid rgb(12, 247, 20);
+  height: 70px;
+}
+.height-max {
+  max-height: 50px;
+  border: 2px solid rgb(246, 226, 2);
+}
+.height-min {
+  min-height: 50px;
+  border: 2px solid rgb(237, 14, 207);
+  margin-bottom: 0;
+}
+
+/*********************************view-control **************/
+.view-control {
+  margin-bottom: 50px;
+}
+.view-control > * {
+  margin-bottom: 20px;
+}
+
+.control-area-content {
+  box-sizing: content-box;
+  max-width: 500px;
+  background-color: #e3d5ed;
+  border: 5px solid rgb(183, 176, 254);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.control-area-border {
+  max-width: 500px;
+  background-color: #e3d5ed;
+  border: 5px solid rgb(183, 176, 254);
+  padding: 20px;
+}
+.control-overflow * {
+  margin-bottom: 15px;
+}
+.control-overflow div {
+  border: 5px solid rgb(229, 253, 11);
+  max-width: 300px;
+  height: 50px;
+}
+.overflow-visible {
+  overflow: visible;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+.overflow-auto {
+  overflow: auto;
+  margin-bottom: 0;
+}
+.control-vertical-align img {
+  max-width: 50px;
+  vertical-align: middle;
+}
+
+.control-display-text {
+  margin-bottom: 15px;
+}
+.control-display-span {
+  display: block;
+  padding: 10px;
+  border: 2px solid rgb(207, 222, 88);
+  margin-bottom: 15px;
+}
+.control-display-div {
+  display: inline;
+  margin-bottom: 0;
+}
+.control-display-p {
+  display: none;
+}
+
+/*****************preview**********/
+.preview {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff3e3;
+  border-radius: 10px;
+  max-width: 643px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.preview-container {
+  padding: 62px 43px 37px 43px;
+}
+.preview-caption {
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 4px;
+}
+.preview-title {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1.25; /* 65/52 */
+  color: #b88e2f;
+  margin-bottom: 14px;
+}
+.preview-text {
+  font-size: 18px;
+  line-height: 1.333; /* 24/18 */
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 46px;
+}
+.preview-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #b88e2f;
+  padding: 25px 72px;
+}
+
+/**************footer*************/
+.footer{
+  text-align: center;
+}
+.footer-link {
+  padding: 15px 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.111; /* 20/18 */
+  background-color: #b88e2f;
+  border-radius: 5px;
+  color: #fff;
+}

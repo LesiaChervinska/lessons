@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- підключення гугл фонтс через плагін -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:500,600,700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Урок 5</title>
+  </head>
+
+  <body>
+    <header class="header" id="top">
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#property-padding" class="header-link">Відступи padding</a>
+        </li>
+        <li class="header-item">
+          <a href="#property-margin" class="header-link">Відступи margin</a>
+        </li>
+        <li class="header-item">
+          <a href="#property-size" class="header-link">Керування розмірами</a>
+        </li>
+        <li class="header-item">
+          <a href="#property-view" class="header-link">Керування
+            відображенням</a>
+        </li>
+        <li class="header-item">
+          <a href="#prev" class="header-link">Макет</a>
+        </li>
+      </ul>
+
+    </header>
+
+    <!-- main-->
+    <main class="page">
+      <div class="info-box">
+        <div class="padding-info" id="property-padding">
+          <h2>Відступи padding</h2>
+          <p>Властивість padding — це внутрішній відступ. Використовується для
+            відступів від кордону блоку всередину блоку (елементу), а не між
+            блоками (елементами). Значення можуть бути лише додатними, тобто
+            більше або рівне нулю.</p>
+          <div class="padding-one">
+            <div>Значенням "padding: 30px;" з усіх сторін</div>
+          </div>
+          <div class="padding-two">
+            <div>Значенням "padding: 30px;" зверху та знизу сторін</div>
+          </div>
+          <div class="padding-three">
+            <div>Значенням "padding: 30px 20px 50px 10px;" відповідно зверху,
+              зправа ,знизу та зліва</div>
+          </div>
+          <div class="padding-four">
+            <div>Приклад запису лише 1 сторони -"padding-top: 35px;". Так само
+              можливий запис padding-right,padding-left,padding-bottom</div>
+          </div>
+
+        </div>
+        <div class="margin-info" id="property-margin">
+          <h2>Відступи margin</h2>
+          <p>Властивість margin — Зовнішній відступ. Використовується для
+            відступів між блоками (елементами), рекомендується робити відступи
+            зверху вниз (margin-bottom) зліва на право. Значення можуть бути
+            від'ємними! НЕ успадковується.</p>
+          <div class="margin-one">Приклад від'ємного відступу margin-left:
+            -50px;</div>
+          <div class="margin-two">Приклад відступу margin-left: 150px;</div>
+          <div class="margin-three">
+            <div class="margin-three-first">Схлопування margin-bottom: 30px; п.с
+              переможець </div>
+            <div class="margin-three-second">Схлопування margin-top: 10px;</div>
+          </div>
+        </div>
+        <div class="info-size" id="property-size">
+          <h2>Властивості для встановлення розмірів елементів </h2>
+          <p class="width-size">Властивість width встановлює чітку ширину для
+            блочних або блочно рядкових елементів,не працює з рядковими.</p>
+          <p class="width-max">Властивість max-width яка обмежує максимальну
+            ширину елементів,для блочних або блочно рядкових елементів,не працює
+            з рядковими.</p>
+          <p class="width-min">Властивість min-width яка обмежує мінімальну
+            ширину елементів,для блочних або блочно рядкових елементів,не працює
+            з рядковими.</p>
+          <p class="height-size">Властивість height встановлює чітку висоту для
+            блочних або блочно рядкових елементів,не працює з рядковими.
+            <mark>НЕ МОЖНА</mark> встановлювати фіксовану висоту для контентних
+            елементів, а для прикладів можна.</p>
+          <p class="height-max">Властивість max-height яка встановлює
+            максимальну висоту елементів,для блочних або блочно рядкових
+            елементів,не працює з рядковими.</p>
+          <p class="height-min">Властивість min-height яка встановлює мінімальну
+            висоту елементів,для блочних або блочно рядкових елементів,не працює
+            з рядковими.</p>
+        </div>
+        <div class="view-control" id="property-view">
+          <h2>Властивості для зміни алгоритмів, обчислень та відображення
+            елементів</h2>
+          <div class="control-area">
+            <div class="control-area-content">Властивість box-sizing:
+              content-box. Розміри елементу обчислюються за стандартним
+              алгоритмом з додаванням відступів та бордерів.Встановлена ширина
+              500px без врахуванням відступів по 20px та бордерів по 5px.</div>
+            <div class="control-area-border">Властивість box-sizing: border-box.
+              Розміри обчислюються за
+              замовченням, додаються відступи та бордери. Розміри елементів
+              завжди будуть чіткі та передбачені. Встановлена ширина 500px з
+              урахуванням відступів по 20px та бордерів по 5px.</div>
+          </div>
+          <div class="control-overflow">
+            <div class="overflow-visible">Властивість overflow зі значенням
+              visible вказана за замовчуванням, відображає увесь контент, навіть
+              за межами заданого розмірурозміру розміру .</div>
+            <div class="overflow-hidden">Властивість overflow зі значенням
+              hidden відображає контент лише в заданому розмірі елементу,все
+              інше буде сховано.</div>
+            <div class="overflow-scroll">Властивість overflow зі значенням
+              scroll додасть смудки для прокрутки.Властивість overflow зі
+              значенням scroll додасть смудки для прокрутки. </div>
+            <div class="overflow-auto">Властивість overflow зі значенням auto
+              додасть смудки для прокрутки тільки у випадку необхідності </div>
+          </div>
+          <div class="control-vertical-align">
+            <p> Властивість vertical-align керує вертикальним вирівнюванням <img
+                src="img/star.png" alt="Зображення зірки">
+              блочно-рядкових та рядкових елементів по вертикалі (осі - Y) Має
+              значення:top,middle,bottom або значення у пікселях.
+            </p>
+          </div>
+          <div class="control-display">
+            <p class="control-display-text">За допомогою властивості display
+              можна змінювати поводження елементу та глобально змінити його
+              сутність. Можна використовувати з наступними
+              властивостями:block,inline, inline-block,none.</p>
+            <span class="control-display-span">Цей span був рядковим,став
+              блочним, має тепер адекватні розміри та займає всю ширину
+              батьківського елементу.</span>
+            <div class="control-display-div">Цей div з блочного перетворили на
+              рядковий, тому він тепер займає ширину/висоту по кількості свого
+              контенту.</div>
+            <span>Я сусід div,який ранішще був блочним і був широким, а тепер ми
+              в одному рядочку</span>
+            <p class="control-display-p">Тут є текст,але мене виключили з потоку
+              none ,тому мене і невидно </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="preview" id="prev">
+        <div class="preview-container">
+          <h3 class="preview-caption">New Arrival</h3>
+          <h1 class="preview-title">Discover Our<br> New Collection</h1>
+          <p class="preview-text">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+          <a href="#" class="preview-link">BUY Now</a>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <a href="#top" class="footer-link">Піднятися на початок </a>
+    </footer>
+  </body>
+
+</html>
