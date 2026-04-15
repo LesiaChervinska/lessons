@@ -207,6 +207,7 @@ h1 {
   background-color: #030303;
   margin-bottom: 50px;
 }
+
 .catalyst-head {
   background: url(../img/head-img.png) 50% / cover no-repeat;
   padding: 94px 10px 85px;
@@ -230,13 +231,14 @@ h1 {
   border-radius: 12px;
 }
 .catalyst-container {
-  padding: 35px 87px 0 86px;
+  padding: 35px 87px 15px 86px;
 }
 .catalyst-content {
   max-width: 834px;
   padding: 32px;
   background-color: rgba(26, 26, 26, 1);
   border-radius: 12px;
+  margin-bottom: 50px;
 }
 .catalyst-content div {
   margin-bottom: 24px;
