@@ -1,0 +1,316 @@
+.wrapper {
+  max-width: 1480px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #e4d9b429;
+}
+.header {
+  padding: 20px 30px;
+  margin-bottom: 50px;
+}
+.header-list {
+  text-align: center;
+}
+.header-item {
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 24px;
+  line-height: 1.333; /* 32/24 */
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.133;
+  margin-bottom: 50px;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgb(40, 4, 4);
+  text-transform: capitalize;
+}
+.decor h2 {
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.231; /* 32/26 */
+  margin-bottom: 30px;
+}
+
+/*************border*********/
+.block {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.block div {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin-right: 40px;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.decor-border div {
+  background-color: rgb(240, 247, 27);
+}
+.border-one {
+  border: 3px solid rgb(0, 0, 0);
+}
+.border-two {
+  border: 10px dotted rgb(0, 0, 0);
+}
+.border-three {
+  border-top: 10px dashed rgb(0, 0, 0);
+  border-bottom: 10px dashed rgb(0, 0, 0);
+  border-left: 10px double rgb(243, 4, 4);
+  border-right: 10px double rgb(243, 4, 4);
+}
+
+.border-fourth {
+  border-width: 15px;
+  border-style: double;
+  border-top-color: rgb(243, 4, 4);
+  border-bottom-color: rgb(67, 255, 10);
+  border-left-color: rgb(0, 32, 215);
+  border-right-color: rgb(183, 0, 122);
+}
+.border-five {
+  border-block: 15px solid rgb(183, 0, 122);
+  border-inline: 15px double rgb(74, 67, 255);
+}
+
+/*****************outline*****************/
+.decor-outline div {
+  background-color: rgb(32, 232, 92);
+}
+
+.outline-one {
+  outline: 15px solid rgb(61, 11, 11);
+  border: 15px solid rgb(9, 202, 228);
+}
+.outline-two {
+  outline: 25px groove rgb(255, 7, 247);
+}
+.outline-three {
+  outline: 10px inset rgb(11, 68, 238);
+}
+
+/***********border-radius*********/
+.decor-radius div {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(235, 134, 206);
+  margin-right: 40px;
+  vertical-align: middle;
+}
+.radius-one {
+  border-radius: 50%;
+  border: 10px solid rgb(136, 255, 0);
+  outline: 20px solid rgb(239, 174, 8);
+}
+.radius-two {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  outline: 10px dotted rgb(209, 224, 92);
+}
+.radius-three {
+  border-top-left-radius: 80%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 80%;
+  border: 10px groove rgb(70, 251, 24);
+}
+.radius-fourth {
+  border-radius: 0 0 0 100%;
+  border: 1px solid rgb(0, 0, 0);
+  outline: 3px double rgb(0, 0, 0);
+  outline-offset: 10px;
+}
+
+/**************box-shadow**************/
+.decor-shadow div {
+  background-color: rgb(203, 246, 246);
+}
+.shadow-one {
+  box-shadow: 5px 5px 35px 15px rgba(43, 48, 67, 0.471);
+}
+.shadow-two {
+  box-shadow: 5px 5px 60px 10px rgba(49, 39, 39, 0.673) inset;
+}
+.shadow-three {
+  box-shadow: -5px -5px 5px 0px rgba(49, 39, 39, 0.829);
+}
+.shadow-fourth {
+  box-shadow:
+    5px -15px 15px 5px rgba(49, 39, 39, 0.829),
+    -15px -15px 100px 12px rgba(244, 30, 30, 0.829) inset,
+    -5px 5px 25px 10px rgba(165, 136, 49, 0.829);
+}
+
+/***************opacity******************/
+.decor-opacity div {
+  background-color: rgb(0, 12, 6);
+  border: 10px solid rgb(142, 0, 0);
+}
+.opacity-one {
+  opacity: 0.1;
+}
+.opacity-two {
+  opacity: 0.5;
+}
+.opacity-three {
+  opacity: 1;
+}
+
+/*************************background*************/
+.bg-properties div {
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.bg-one {
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 8%,
+    rgba(9, 9, 121, 1) 47%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.bg-two {
+  background: url("../img/earth.png");
+}
+.bg-three {
+  background: url("../img/earth.png") no-repeat;
+}
+.bg-three {
+  background: url("../img/earth.png") center no-repeat;
+}
+.bg-fourth {
+  background: url("../img/earth.png") round;
+}
+.bg-five {
+  background: url("../img/target.png") 0 0 / contain no-repeat;
+}
+.bg-six {
+  background: url("../img/target.png") 0 0 no-repeat local;
+  overflow: auto;
+  padding: 7px; /****мені здалось, що для читабельності так зручніше, але не знаю чи допустимо в такому випадку так робити */
+}
+
+/***********************page-head************/
+.catalyst {
+  font-family: "Barlow", sans-serif;
+  color: #b3b3b2;
+  background-color: #030303;
+}
+.catalyst-head {
+  background: url(../img/head-img.png) 50% / cover no-repeat;
+  padding: 94px 10px 85px;
+  text-align: center;
+}
+.catalyst-head h2 {
+  color: #f9efec;
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.5; /* 96/64 */
+  margin-bottom: 17px;
+  text-transform: uppercase;
+}
+.catalyst-link {
+  color: #fff;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  line-height: 1.5; /* 24/16 */
+  background-color: #0a84ff;
+  padding: 13px 79px;
+  border-radius: 12px;
+}
+.catalyst-container {
+  padding: 35px 87px 0 86px;
+}
+.catalyst-content {
+  max-width: 834px;
+  padding: 32px;
+  margin-bottom: 30px;
+  background-color: rgba(26, 26, 26, 1);
+  border-radius: 12px;
+}
+.catalyst-content div {
+  margin-bottom: 24px;
+}
+.catalyst-content h3 {
+  color: #f9efec;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5; /* 36/24 */
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.catalyst-content p {
+  font-weight: 400;
+  line-height: 1.5; /* 24/16 */
+}
+.catalyst-about p,
+.catalyst-benefits p {
+  margin-bottom: 35px;
+}
+.catalyst-item {
+  background: url("../img/item-png.png") 0 -3px no-repeat;
+  padding-left: 26px;
+  min-height: 21px;
+  margin-bottom: 20px;
+}
+
+.catalyst-benefits .delete-margin,
+div.catalyst-benefits {
+  margin-bottom: 0;
+}
+
+/********* Furniro***************/
+.furniro {
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+}
+.furniro-container {
+  background: url("../img/furniro-bg.jpg");
+}
+.furniro-box {
+  text-align: center;
+  padding: 61px 15px 97px;
+}
+.furniro-title {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 1px;
+}
+.furniro-item {
+  display: inline-block;
+  margin-left: 6px;
+}
+.furniro-link-bold {
+  font-weight: 500;
+}
+.furniro-link-light {
+  font-weight: 300;
+  background: url("../img/menu-arrow.svg") no-repeat;
+  padding-left: 16px;
+  min-height: 20px;
+}
+/****************footer**************/
+
+.footer {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.footer-link {
+  font-size: 20px;
+  border-bottom: 2px solid red;
+}
