@@ -278,7 +278,7 @@ div.catalyst-benefits {
   margin-bottom: 50px;
 }
 .furniro-container {
-  background: url("../img/furniro-bg.jpg");
+  background: url("../img/furniro-bg.jpg") center no-repeat;
 }
 .furniro-box {
   text-align: center;
