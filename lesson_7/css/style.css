@@ -15,8 +15,8 @@
       rgba(182, 204, 191, 1) 0%,
       rgb(28 30 28 / 46%) 100%
     ),
-    url(/img/header-img.jpg) 0 60% / cover no-repeat;
-  min-height: 100px;
+    url(../img/header-img.jpg) 0 60% / cover no-repeat;
+
   box-shadow: 1px 7px 70px 45px #151414ba;
 }
 
