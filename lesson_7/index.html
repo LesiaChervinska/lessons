@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 7</title>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header class="header" id="top">
+        <div class="header-container">
+          <ul class="header-list">
+            <li class="header-item">
+              <a href="#pseudo-class" class="header-link">Псевдокласи</a>
+            </li>
+            <li class="header-item">
+              <a href="#pseudo-elements" class="header-link">Псевдоелементи</a>
+            </li>
+            <li class="header-item">
+              <a href="#agrolink" class="header-link">Макет</a>
+            </li>
+            <li class="header-item">
+              <a href="#game" class="header-link">Гра</a>
+            </li>
+          </ul>
+
+        </div>
+      </header>
+
+      <!-- main-->
+      <main class="page">
+        <div class="page-container">
+          <h1>Псевдокласи та псевдоелементи</h1>
+          <div class="classes" id="pseudo-class">
+            <div class="classes-state">
+              <h2>Псевдокласи стану</h2>
+              <div class="classes-hover content-box">
+                <h3>:hover - звернення до елементу при наведенні курсору</h3>
+                <div class="classes-hover-1">
+                  <img src="img/icon-hover.png" alt="комплект меблів">
+                </div>
+                <div class="classes-hover-2">Може звертатися як до блочного
+                  елементу</div>
+                <div class="classes-hover-3">
+                  <span>Може звертатися до рядкогово</span>
+                </div>
+                <div class="classes-hover-4">
+                  <a href="#">Або можна звертатися до блочно-рядкового</a>
+                </div>
+              </div>
+
+              <div class="classes-active content-box">
+                <h3>:active - звернення до елементу в стані натиснення
+                </h3>
+                <a href="#" class="classes-active-2">Натисни мене</a>
+                <a href="#" class="classes-active-3">Натисни мене</a>
+                <a href="#" class="classes-active-4">Натисни мене</a>
+                <a href="#" class="classes-active-1"><img
+                    src="img/icon-hover.png" alt="комплект меблів"></a>
+              </div>
+              <div class="classes-focus content-box ">
+                <h3>:focus — звернення до елементу у стані "фокусу"</h3>
+                <div class="classes-focus-1">
+                  <a href="#">я просто focus</a>
+                </div>
+                <div class="classes-focus-2">
+                  <a href="#">я просто focus</a>
+                </div>
+                <div class="classes-focus-3">
+                  <a href="#">я focus-visible</a>
+                </div>
+              </div>
+              <div class="classes-visited content-box">
+                <h3>:visited — звернення до елемента у стані переглянутого
+                  раніше
+                  посилання</h3>
+                <div class="classes-visited-1">
+                  <a href="https://en.wikipedia.org/wiki/Main_Page"
+                    target="_blank">Вікіпедія</a>
+                </div>
+                <div class="classes-visited-2">
+                  <a href="https://www.google.com/" target="_blank">Гугл</a>
+                </div>
+              </div>
+              <div class="classes-target content-box" id="q">
+                <h3>:target — звернення до елемента при посилання з іншого
+                  елемунту</h3>
+                <a href="#block" class="target-link">Натиснути</a>
+                <div class="target-block" id="block">
+                  <img src="img/target-img.png" alt="хмара думок">
+                  <a href="#" class="target-hide">Сховати</a>
+                </div>
+              </div>
+            </div>
+            <div class="classes-structural">
+              <h2>Псевдокласи положення у коді</h2>
+              <div class="structural-first-child content-box">
+                <h3>Псевдоклас :first-child — звернення до першого елементу в
+                  коді</h3>
+                <ul>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                </ul>
+              </div>
+              <div class="structural-last-child content-box">
+                <h3>Псевдоклас :last-child — звернення до останнього елементу в
+                  коді</h3>
+                <ul>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                </ul>
+              </div>
+              <div class="structural-first-of-type content-box">
+                <h3>Псевдоклас :first-of-type — звернення до першого вказаного
+                  об'єкту в коді</h3>
+                <ul>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                </ul>
+              </div>
+              <div class="structural-last-of-type content-box">
+                <h3>Псевдоклас :last-of-type— звернення до останнього елементу в
+                  коді</h3>
+                <ul>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                </ul>
+              </div>
+              <div class="structural-nth-child content-box">
+                <h3>Псевдоклас :nth-child() — звернення до конкретного елементу
+                  в коді</h3>
+                <ul>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку :not - з виключенням</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку :not - з виключенням</li>
+                  <li>Елемент списку</li>
+                </ul>
+              </div>
+              <div class="structural-nth-child-exp content-box">
+                <h3>Псевдоклас :nth-child(комбінації) — звернення до
+                  конкретного елементу в коді за допомогою рівняння </h3>
+                <ul>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="classes-conditions content-box">
+              <div>
+                <h3>Псевдоклас :has() - присутності в коді та :not() —
+                  псевдоклас виключення</h3>
+                <ul class="classes-conditions-list">
+                  <li>Елемент списку</li>
+                  <li>Елемент списку</li>
+                  <li class="has-condinion">
+                    <ul>
+                      <li>li:has(li)</li>
+                      <li>li:has(li)</li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Елемент списку li:has(a) </a></li>
+                  <li>Елемент списку</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pseudo-elements page-container" id="pseudo-elements">
+          <h2>Псевдоелементи</h2>
+          <div class="pseudo-elements-before content-box">
+            <h3>Псевдоелемент ::before{} - перед елементом</h3>
+            <ul>
+              <li>Пункт списку </li>
+              <li>Пункт списку</li>
+              <li>Пункт списку</li>
+              <li>Пункт списку</li>
+            </ul>
+          </div>
+          <div class="pseudo-elements-after content-box">
+            <h3>Псевдоелемент ::after{} - після елементу</h3>
+            <ul>
+              <li>Пункт списку</li>
+              <li>Пункт списку</li>
+              <li>Пункт списку</li>
+              <li>Пункт списку</li>
+            </ul>
+          </div>
+        </div>
+        <div class="agrolink" id="agrolink">
+          <div class="agrolink-content">
+            <h2>Grown <span>by Nature</span></h2>
+            <p>We grow our crops naturally. We are a fast-growing agricultural
+              technology company passionate about ensuring food security. We
+              leverage our technology to improve productivity & sales to promote
+              food security for you and your family.</p>
+            <a href="#" class="agrolink-link">Learn more</a>
+          </div>
+        </div>
+        <div class="game" id="game">
+          <h3>Гра</h3>
+          <div class="game-field">
+            <div class="game-item-1"></div>
+            <div class="game-item-2"></div>
+            <div class="game-item-3"></div>
+            <div class="game-item-4"></div>
+            <div class="game-item-5"></div>
+            <div class="game-item-6"></div>
+            <div class="game-item-7"></div>
+            <div class="game-item-8"></div>
+            <div class="game-item-9"></div>
+            <div class="game-item-10"></div>
+            <div class="game-item-11"></div>
+            <div class="game-item-12"></div>
+            <div class="game-item-13"></div>
+            <div class="game-item-14"></div>
+            <div class="game-item-15"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <h4>2023 agrolink. All rights reverved</h4>
+        <a href="#top" class="footer-link">up</a>
+      </footer>
+
+    </div>
+  </body>
+
+</html>
