@@ -1,7 +1,4 @@
 .wrapper {
-  max-width: 1480px;
-  padding: 0 15px;
-  margin: 0 auto;
   background-color: #e4d9b429;
 }
 .header {
@@ -212,6 +209,7 @@ h1 {
   background: url(../img/head-img.png) 50% / cover no-repeat;
   padding: 94px 10px 85px;
   text-align: center;
+  margin-bottom: 20px;
 }
 .catalyst-head h2 {
   color: #f9efec;
@@ -227,39 +225,32 @@ h1 {
   font-weight: 500;
   line-height: 1.5; /* 24/16 */
   background-color: #0a84ff;
-  padding: 13px 79px;
+  min-width: 235px;
+  padding: 13px 15px;
   border-radius: 12px;
 }
-.catalyst-container {
-  padding: 35px 87px 15px 86px;
-}
-.catalyst-content {
+
+.catalyst-content{
   max-width: 834px;
   padding: 32px;
   background-color: rgba(26, 26, 26, 1);
-  border-radius: 12px;
-  margin-bottom: 50px;
+   border-radius: 12px;
 }
-.catalyst-content div {
-  margin-bottom: 24px;
-}
-.catalyst-content h3 {
-  color: #f9efec;
+.catalyst-content h3{
   font-size: 24px;
   font-weight: 500;
   line-height: 1.5; /* 36/24 */
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
-.catalyst-content p {
-  font-weight: 400;
+.catalyst-content p{
   line-height: 1.5; /* 24/16 */
-}
-.catalyst-about p,
-.catalyst-benefits p {
   margin-bottom: 35px;
 }
-.catalyst-item {
+.catalyst-content ul li{
+  line-height: 1.5; /* 24/16 */
+}
+.catalyst-content ul li {
   background: url("../img/item-png.png") 0 -3px no-repeat;
   padding-left: 26px;
   min-height: 21px;
@@ -287,6 +278,7 @@ div.catalyst-benefits {
 .furniro-title {
   font-size: 48px;
   font-weight: 500;
+  line-height: 1.5; /* 72/48 */
   margin-bottom: 1px;
 }
 .furniro-item {
