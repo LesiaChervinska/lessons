@@ -1,0 +1,92 @@
+.wrapper {
+  background-color: #f0eac5;
+  text-align: center;
+}
+
+.header h1 {
+  padding-block: 25px;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px 13px rgb(60, 56, 56);
+  background-color: #dae4ac51;
+  box-shadow: 1px 2px 5px black;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.page {
+  padding: 50px;
+}
+
+.icons {
+  margin-bottom: 30px;
+}
+
+.icons>*:not(:last-child),
+.contents>*:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.icons div h2 {
+  display: inline-block;
+
+}
+
+.icons img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.icons-list li {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.icons-list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.icons-list li::before {
+  content: '';
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.icons-list li:nth-child(1)::before {
+  background: url('../img/account-icon.svg') 0 50% no-repeat;
+  margin-bottom: -10px;
+}
+
+.icons-list li:nth-child(2)::before {
+  background: url('../img/search-icon.svg') 0 50% no-repeat;
+  margin-bottom: -10px;
+}
+
+.icons-list li:nth-child(3)::before {
+  background: url('../img/favorite-icon.svg') 0 50% no-repeat;
+  margin-bottom: -10px;
+}
+
+.icons-list li:nth-child(4)::before {
+  background: url('../img/basket-icon.svg') 0 50% no-repeat;
+  margin-bottom: -10px;
+}
+
+.contents-img-items img {
+  border-radius: 10px;
+}
+
+.footer {
+  text-shadow: 2px 2px 13px rgb(60, 56, 56);
+  background-color: #dae4ac51;
+  box-shadow: 1px 2px 5px black;
+}
+
+.footer-link {
+  padding: 15px 20px;
+}
