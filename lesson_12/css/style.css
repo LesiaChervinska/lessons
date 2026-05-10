@@ -319,18 +319,21 @@
 }
 
 .animation__ufo {
-  max-width: 600px;
+  max-width: 300px;
   height: 300px;
   position: relative;
-  top: -982px;
+  top: -982px; 
   left: -965px;
   animation: move 8s ease-in infinite alternate;
+}
+.animation__ufo:hover{
+  animation-play-state:paused;
 }
 
 .ufo__top {
   position: absolute;
   top: 45px;
-  left: 60%;
+  left: 73%;
   width: 120px;
   height: 68px;
   border-radius: 100px 100px 0 0;
@@ -422,11 +425,11 @@
 .ufo__receiver {
   position: absolute;
   top: -10px;
-  left: 51%;
+  left: 43%;
   width: 10px;
   height: 10px;
   background-color: #d30909;
-  rotate: 4deg;
+  rotate: -3deg;
   border-radius: 50% 50% 0 0;
   animation: receiver 1s ease-in infinite;
 }
