@@ -1,0 +1,124 @@
+@keyframes light {
+    0% {
+        background-color: #ffffcc;
+        box-shadow: 1px 41px 92px 95px rgba(255, 255, 150, 0.7);
+    }
+
+    100% {
+        background-color: #edede6;
+        box-shadow: 1px 41px 92px 95px rgba(64, 64, 56, 0.7);
+    }
+}
+
+@keyframes receiver {
+    0% {
+        background-color: #d30909;
+        box-shadow: 1px 41px 50px 29px rgba(255, 187, 187, 0.7);
+    }
+
+    100% {
+        background-color: #100b0b;
+        box-shadow: 1px 4px 50px 29px rgba(64, 63, 63, 0.7);
+    }
+}
+
+@keyframes move {
+    0% {
+        top: -382px;
+        left: -965px;
+    }
+
+    10% {
+        top: 123px;
+        left: 132px;
+        rotate: -35deg;
+    }
+
+    25% {
+        top: 123px;
+        left: 132px;
+    }
+
+    40% {
+        top: 173px;
+        left: 152p
+    }
+
+    50% {
+        top: 293px;
+        left: 750px;
+
+    }
+
+    75% {
+        top: 293px;
+        left: 0px;
+        scale: 1.2;
+    }
+
+    100% {
+        top: 230px;
+        left: 1100px;
+        scale: 0.2;
+    }
+}
+
+@keyframes blink {
+    0% {
+        display: block;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+@keyframes cometa-1 {
+    0% {
+        top: 20px;
+        left: -500px;
+    }
+
+    100% {
+        top: 450px;
+        left: 1500px;
+    }
+}
+
+@keyframes cometa-2 {
+    0% {
+        top: 0;
+        left: 1250px;
+    }
+
+    100% {
+        top: 850px;
+        left: 100px;
+    }
+}
+
+@keyframes cometa-3 {
+    0% {
+        top: 400px;
+        left: -150px;
+    }
+
+    100% {
+        top: 550px;
+        left: 1800px;
+    }
+}
+
+@keyframes stop-blink {
+    0% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 150, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 10px rgba(130, 45, 16, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 150, 0.7);
+    }
+}
