@@ -183,51 +183,6 @@
   animation-play-state: running;
 }
 
-@keyframes move-box {
-  0% {
-    translate: 0 0;
-  }
-
-  25% {
-    translate: 50px 0;
-  }
-
-  50% {
-    translate: 50px 50px;
-  }
-
-  75% {
-    translate: 100px 50px;
-  }
-
-  100% {
-    translate: 150px 100px;
-    ;
-  }
-}
-
-@keyframes rotate-box {
-  0% {
-    rotate: 0deg;
-  }
-
-  25% {
-    rotate: 45deg;
-  }
-
-  50% {
-    rotate: 90deg;
-  }
-
-  75% {
-    rotate: 135deg;
-  }
-
-  100% {
-    rotate: 180deg;
-  }
-}
-
 .train__list li:nth-child(7) div {
   width: 50px;
   height: 50px;
@@ -239,32 +194,6 @@
   animation: move-ball 2s linear 0s infinite;
 }
 
-@keyframes move-ball {
-  0% {
-    translate: 0 0;
-  }
-
-  25% {
-    translate: -70px -40px;
-    background-color: #f62525;
-  }
-
-  50% {
-    translate: 80px -60px;
-    background-color: #0cf136;
-  }
-
-  75% {
-    translate: -80px -100px;
-    background-color: #0b41e1;
-  }
-
-  100% {
-    translate: 80px -140px;
-    background-color: #ad0afe;
-  }
-}
-
 .train__list li:nth-child(7):hover div {
   animation-play-state: paused;
 }
@@ -274,35 +203,13 @@
   height: 200px;
   animation: change-bg 1s ease-in infinite;
 }
-
-@keyframes change-bg {
-  0% {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(7, 45, 145, 1) 0%, rgba(0, 212, 255, 1) 100%);
-  }
-
-  25% {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(7, 45, 145, 1) 26%, rgba(0, 212, 255, 1) 100%);
-  }
-
-  50% {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(7, 45, 145, 1) 50%, rgba(0, 212, 255, 1) 100%);
-  }
-
-  75% {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(7, 45, 145, 1) 74%, rgba(0, 212, 255, 1) 100%);
-  }
-
-  100% {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(7, 45, 145, 1) 100%, rgba(0, 212, 255, 1) 100%);
-  }
-}
-
 /***********************page___animation************/
 
 .animation--size {
+  padding: 20px;
   position: relative;
-  min-height: 600px;
-  margin-bottom: 30px;
+  min-height: 700px;
+  margin-bottom: 10px;
   background: url(../img/moon.png) 100% 100%/300px 300px no-repeat, url(../img/cosmos.webp) 0 0/cover no-repeat;
 }
 
@@ -321,23 +228,26 @@
 .animation__ufo {
   max-width: 300px;
   height: 300px;
-  position: relative;
-  top: -982px; 
-  left: -965px;
-  animation: move 8s ease-in infinite alternate;
+  position: absolute;
+  top: 70%;
+  left: 85%;
+  scale: 0.5;
+  z-index: 10;
+  animation: move 10s ease-in 1 forwards;
 }
-.animation__ufo:hover{
-  animation-play-state:paused;
+
+.animation__ufo:hover {
+  animation-play-state: paused;
 }
 
 .ufo__top {
+  contain-intrinsic-block-size: auto 100px;
   position: absolute;
-  top: 45px;
-  left: 73%;
+  top: 43px;
+  left: 77px;
   width: 120px;
-  height: 68px;
+  height: 70px;
   border-radius: 100px 100px 0 0;
-  background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   rotate: 26deg;
@@ -451,6 +361,7 @@
   border-bottom-right-radius: 100px;
   rotate: 65deg;
   background-color: #929090;
+  box-shadow: 1px 20px 40px 12px #e3160dd4;
 }
 
 .ufo__first-leg {
@@ -516,5 +427,5 @@
 
 .footer__box {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }

@@ -1,3 +1,97 @@
+
+
+@keyframes change-bg {
+  0% {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(7, 45, 145, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  }
+
+  25% {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(7, 45, 145, 1) 26%, rgba(0, 212, 255, 1) 100%);
+  }
+
+  50% {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(7, 45, 145, 1) 50%, rgba(0, 212, 255, 1) 100%);
+  }
+
+  75% {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(7, 45, 145, 1) 74%, rgba(0, 212, 255, 1) 100%);
+  }
+
+  100% {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(7, 45, 145, 1) 100%, rgba(0, 212, 255, 1) 100%);
+  }
+}
+
+@keyframes move-ball {
+  0% {
+    translate: 0 0;
+  }
+
+  25% {
+    translate: -70px -40px;
+    background-color: #f62525;
+  }
+
+  50% {
+    translate: 80px -60px;
+    background-color: #0cf136;
+  }
+
+  75% {
+    translate: -80px -100px;
+    background-color: #0b41e1;
+  }
+
+  100% {
+    translate: 80px -140px;
+    background-color: #ad0afe;
+  }
+}
+@keyframes move-box {
+  0% {
+    translate: 0 0;
+  }
+
+  25% {
+    translate: 50px 0;
+  }
+
+  50% {
+    translate: 50px 50px;
+  }
+
+  75% {
+    translate: 100px 50px;
+  }
+
+  100% {
+    translate: 150px 100px;
+    ;
+  }
+}
+
+@keyframes rotate-box {
+  0% {
+    rotate: 0deg;
+  }
+
+  25% {
+    rotate: 45deg;
+  }
+
+  50% {
+    rotate: 90deg;
+  }
+
+  75% {
+    rotate: 135deg;
+  }
+
+  100% {
+    rotate: 180deg;
+  }
+}
+
 @keyframes light {
     0% {
         background-color: #ffffcc;
@@ -24,52 +118,37 @@
 
 @keyframes move {
     0% {
-        top: -382px;
-        left: -965px;
-    }
-
-    10% {
-        top: 123px;
-        left: 132px;
-        rotate: -35deg;
+        top: 70%;
+        left: 85%;
+        scale: 0.5;
     }
 
     25% {
-        top: 123px;
-        left: 132px;
+        top: 50%;
+        left: 50%;
+        scale: 1;
+        rotate: -35deg;
     }
 
-    40% {
-        top: 173px;
-        left: 152px;
-    }
 
     50% {
-        top: 293px;
-        left: 750px;
-
+        top: 30%;
+        left: 30%;
     }
 
     75% {
-        top: 293px;
-        left: 0px;
+        top: 30%;
+        left: 30%;
+        scale: 1.5;
+        rotate: 10deg;
         scale: 1.2;
     }
 
     100% {
-        top: 230px;
-        left: 1100px;
-        scale: 0.2;
-    }
-}
-
-@keyframes blink {
-    0% {
-        display: block;
-    }
-
-    100% {
-        display: none;
+        top: -30%;
+        left: -30%;
+        scale: 0.7
+        ;
     }
 }
 
