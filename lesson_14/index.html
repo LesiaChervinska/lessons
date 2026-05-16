@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>14</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header header--flex">
+        <a href="#" class="header__logo logo">
+          <img src="img/logo.webp" alt="letter logo 'M'" class="logo__img">
+          <span class="logo__text">Furniro</span>
+        </a>
+
+        <ul class="header__menu menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Shop</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">About</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contact</a>
+          </li>
+        </ul>
+        <div class="header__control">
+          <a href="#" class="header__link-img">
+            <img src="img/svg/user.svg" alt="image icon person"
+              class="header__img-control">
+          </a>
+          <a href="#" class="header__link-img">
+            <img src="img/svg/search.svg" alt="image icon search"
+              class="header__img-control">
+          </a>
+          <a href="#" class="header__link-img">
+            <img src="img/svg/favorite.svg" alt="image icon heart"
+              class="header__img-control">
+          </a>
+          <a href="#" class="header__link-img">
+            <img src="img/svg/bascket.svg" alt="image icon bascket"
+              class="header__img-control">
+          </a>
+        </div>
+      </header>
+      <main class="page">
+        <div class="page__container">
+          <div class="page__item item">
+            <div class="item__body">
+              <div class="item__img-box">
+
+                <div class="item__prew-img">
+                  <a href="#" class="item__container">
+                    <img src="img/01.webp" alt class="item__img">
+                  </a>
+                  <a href="#" class="item__container">
+                    <img src="img/02.webp" alt class="item__img">
+                  </a>
+                  <a href="#" class="item__container">
+                    <img src="img/03.webp" alt class="item__img">
+                  </a>
+                  <a href="#" class="item__container">
+                    <img src="img/04.webp" alt class="item__img">
+                  </a>
+                </div>
+                <a href="#" class="item__big-img">
+                  <img src="img/big-sofa.webp" alt="big sofa"
+                    class="item__image item__image--big">
+                </a>
+              </div>
+              <div class="item__descr">
+                <div class="item__text-body">
+                  <h1 class="item__title">Asgaard sofa</h1>
+                  <p class="item__price">Rs. 250,000.00</p>
+                  <div class="item__grade">
+                    <div class="item__box-grade">
+                      <span class="item__star"></span>
+                      <span class="item__star"></span>
+                      <span class="item__star"></span>
+                      <span class="item__star"></span>
+                      <span class="item__half-star"></span>
+                    </div>
+                    <a href="#" class="item__review">5 Customer Review</a>
+                  </div>
+                  <p class="item__text">Setting the bar as one of the loudest
+                    speakers in its class, the Kilburn is a compact,
+                    stout-hearted hero with a well-balanced audio which boasts a
+                    clear midrange and extended highs for a sound.</p>
+                </div>
+                <div class="item__form-body">
+                  <form action="#" class="item__form form"
+                    enctype="multipart/form-data" name="form[]">
+                    <div class="form__size">
+                      <p class="form__subtitle">Size</p>
+                      <label for="size-l" class="form__label">
+                        <input
+                          class="form__input-size form__input-size--checked"
+                          type="radio" id="size-l" name="size" value="L">
+                      </label>
+                      <label for="size-xl" class="form__label">
+                        <input class="form__input-size" type="radio"
+                          id="size-xl" name="size" value="XL"></label>
+                      <label for="size-xs" class="form__label">
+                        <input class="form__input-size" type="radio"
+                          id="size-xs" name="size" value="XS"></label>
+                    </div>
+                    <div class="form__color">
+                      <p class="form__subtitle">Color</p>
+                      <label for="color-violet" class="form__label">
+                        <input class="form__input-color" type="radio"
+                          value="violet" name="color" id="color-violet">
+                      </label>
+                      <label for="black-color" class="form__label">
+                        <input class="form__input-color" type="radio"
+                          value="black" name="color" id="black-color">
+                      </label>
+                      <label for="orange-color" class="form__label">
+                        <input class="form__input-color" type="radio"
+                          value="orange" name="color" id="orange-color">
+                      </label>
+                    </div>
+                    <div class="form__buttons">
+                      <button class="form__btn-add button" type="button">Add To
+                        Cart</button>
+                      <button class="form__btn-add button "
+                        type="button">Compare</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page__contacts contacts-form">
+          <form action="#" class="contacts-form__form" method="post"
+            enctype="multipart/form-data" name="form[]">
+
+            <div class="contacts-form__box-name">
+              <label for="user-name" class="contacts-form__lable">
+                <span class="contacts-form__span">Your name</span>
+                <input class="contacts-form__input" type="text" id="user-name"
+                  placeholder="Abc" required>
+              </label>
+            </div>
+            <div class="contacts-form__box-email">
+              <label for="user-email" class="contacts-form__lable">
+                <span class="contacts-form__span">Email address</span>
+                <input class="contacts-form__input" type="email" id="user-email"
+                  placeholder="Abc@def.com"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+              </label>
+            </div>
+            <div class="contacts-form__box-subject">
+              <label for="user-subject" class="contacts-form__lable">
+                <span class="contacts-form__span">Subject</span>
+                <input class="contacts-form__input" type="text"
+                  id="user-subject" placeholder="This is an optional">
+              </label>
+            </div>
+            <div class="contacts-form__box-subject">
+              <label for="textarea" class="contacts-form__lable">
+                <span class="contacts-form__span">Message</span>
+                <textarea class="contacts-form__textarea" id="textarea"
+                  autocomplete="off"
+                  placeholder="Hi! i’d like to ask about"></textarea>
+              </label>
+            </div>
+            <button class="contacts-form__button" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="page__train train">
+          <div class="train__container">
+            <form method="GET" enctype="multipart/form-data" action="#"
+              class="train__form" name="form[]">
+              <div class="train__box">
+                <label for="text">
+                  <span>Input type="text"</span>
+                  <input type="text" id="text" placeholder="Your name">
+                </label>
+              </div>
+              <div class="train__box">
+                <label for="email">
+                  <span>Input type="email"</span>
+                  <input type="email" id="email" placeholder="Your email">
+                </label>
+              </div>
+              <div class="train__box">
+                <label for="tel">
+                  <span>Input type="tel"</span>
+                  <input type="tel" id="tel" placeholder="Your phone number">
+                </label>
+              </div>
+              <div class="train__box">
+                <label for="password">
+                  <span>Input type="password "</span>
+                  <input type="password" id="password"
+                    placeholder="Your  password">
+                </label>
+              </div>
+              <div class="train__box">
+                <label for="number">
+                  <span>Input type="number "</span>
+                  <input type="number" id="number" placeholder="Number ">
+                </label>
+              </div>
+              <div class="train__box">
+                <label for="color">
+                  <span>Input type="color "</span>
+                  <input type="color" id="color">
+                </label>
+              </div>
+              <div class="train__box">
+                <label for="search">
+                  <span>Input type="search"</span>
+                  <input type="search" id="search" placeholder="Search here "
+                    autocomplete="off">
+                </label>
+              </div>
+              <div class="train__box">
+                <label for="range">
+                  <span>Input type="range"</span>
+                  <input type="range" id="range">
+                </label>
+              </div>
+              <div class="train__box">
+                <label for="file">
+                  <span>Input type="file"</span>
+                  <input type="file" id="file" name="file"
+                    accept="image/png, image/jpeg" multiple>
+                </label>
+              </div>
+              <div class="train__box">
+                <span>Select list</span>
+                <select name="select-list" class="train__select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="train__box buttons-block">
+                <button class="buttons-block__btn" type="button"> Type
+                  "button"</button>
+                <button class="buttons-block__btn" type="reset"> Type
+                  "reset"</button>
+                <button class="buttons-block__btn" type="submit"> Type
+                  "submit"</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <p>2023 furino. All rights reverved</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+</html>
