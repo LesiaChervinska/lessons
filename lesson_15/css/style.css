@@ -109,7 +109,10 @@ body {
   transition: 0.5s;
   flex-grow: 1;
 }
-
+.product-card__img-link {
+  flex-grow: 1;
+  min-height: 381px;
+}
 .product-card__notice {
   width: 48px;
   height: 48px;
