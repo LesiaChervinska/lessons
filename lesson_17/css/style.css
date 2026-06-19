@@ -73,7 +73,7 @@ body {
 }
 
 .menu__link {
-  transition: all 0.2s;
+  transition: all .3s;
 }
 
 .header__btn-box {
@@ -91,6 +91,7 @@ body {
   align-items: center;
   background-color: #0A84FF;
   border-radius: 10px;
+  transition: all 0.5s;
 }
 
 
@@ -153,11 +154,11 @@ body {
 
 .content-block__card-img {
   aspect-ratio: 492/299;
+  transition: all 0.5s;
 }
 
-.content-block__img-block {
+.content-block__img {
   max-width: 100%;
-  transition: all 0.5s;
 }
 
 /**************************************************************/
@@ -496,6 +497,7 @@ body {
   .menu__link:hover {
     text-underline-offset: 5px;
     text-decoration: underline;
+    color: rgba(85, 85, 85, 0.897);
   }
 
   .content-block__img:hover img {
@@ -507,12 +509,10 @@ body {
   }
 
   .expertise__card:hover {
-    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.08),
-      0 4px 12px rgba(255, 255, 255, 0.04);
+    box-shadow: 0px -5px 30px rgb(151 149 149 / 29%), 5px 4px 12px rgb(255 252 252 / 4%);
   }
 
   .record__item:hover {
-    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.08),
-      0 4px 12px rgba(255, 255, 255, 0.04);
+    box-shadow: inset 0px -5px 30px rgb(151 149 149 / 29%), 5px 4px 12px rgb(255 252 252 / 4%);
   }
 }
