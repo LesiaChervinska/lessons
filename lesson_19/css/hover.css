@@ -1,0 +1,54 @@
+@media (any-hover: hover) {
+
+    .hero__recipe-link:hover {
+        background-color: #e7fafe;
+        color: var(--main-text-color);
+        outline: 2px solid black;
+        cursor: pointer;
+    }
+
+    .categories__item:hover .categories__img {
+        scale: 1.1;
+    }
+
+    .hero__top-btn:hover {
+        background-color: #5c515160;
+        color: #4a5457;
+        cursor: pointer;
+    }
+
+    .recipes__item :hover .item-recipe__images {
+        scale: 1.06;
+    }
+
+    .categories__link:hover {
+        background-color: #000;
+        color: #fff;
+
+    }
+
+    .categories__sub-title:hover {
+        background-color: #e7fafe;
+        color: var(--main-text-color);
+    }
+
+    .chef__btn:hover {
+        background-color: #e7fafe;
+        color: var(--main-text-color);
+        outline: 2px solid black;
+    }
+
+    .social-info__btn:hover {
+        background-color: #e7fafe;
+        color: var(--main-text-color);
+        outline: 2px solid black;
+    }
+
+    .social-info__img:hover {
+        scale: 1.05;
+    }
+
+    .social__link:hover {
+        scale: 1.1;
+    }
+}

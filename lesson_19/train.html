@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="page__train train">
+            <div>
+                <a href="index.html">НА ГОЛОВНУ </a>
+            </div>
+            <h1>Відносні одиниці та інші корисні речі</h1>
+            <div class="train__block">
+                <div class="train__parent">
+                    <h2>Від Ш.Б.Е. працюють такі властивості:</h2>
+                    <div>width: 40%;
+                        padding:5px
+                    </div>
+                    <div> min-width: 100%;</div>
+                    <div> max-width: 50%;</div>
+                    <div>right: 20%;</div>
+                    <div>left: 20%;</div>
+                </div>
+                <div class="train__parent">
+                    <h2>Від В.Б.Е. працюють такі властивості</h2>
+                    <div>height: 10%; padding:5px
+                    </div>
+                    <div>max-height: 25%;</div>
+                    <div>min-height: 25%;</div>
+                    <div>position: relative; top: 15%;</div>
+                    <div>position: relative; bottom: 20%;</div>
+                </div>
+                <div class="train__parent">
+                    <h2>Коли відсоток береться від розміру в’юпорту:при
+                        position:
+                        fixed;</h2>
+                    <div>position: fixed;width: 25%; top:55%</div>
+                </div>
+                <div class="train__parent">
+                    <h2>Коли відсоток береться від розміру батьківського
+                        елементу у
+                        якого position відмінний від static:</h2>
+                    <div>width: 50%; height: 30%;</div>
+                </div>
+                <div class="train__parent">
+                    <h2>Коли відсоток береться від розміру шрифту елементу (за
+                        замовченням 16px чи успадкованого розміру від
+                        батька):</h2>
+                    <div>font-size: 120%;
+                        line-height: 120%;</div>
+                </div>
+                <div class="train__parent">
+                    <h2>Коли відсоток береться від розміру самого елементу:</h2>
+                    <div>transform: translate(50%, -10%);</div>
+                </div>
+                <div class="train__parent">
+                    <h2>Відносні одиниці EM та REM</h2>
+                    <div>Відносна одиниця REM. Розмір формується відносно
+                        розміру
+                        шрифту
+                        (font-size) у тезі або браузера за замовчуванням.
+                        1rem дорівнює значенню font-size у тезі або браузера за
+                        замовчуванням.
+                        <code>font-size: 1.875rem;
+                            padding: 0.625rem;
+                            outline: 0.125rem solid rgb(87, 70, 70);</code>
+                    </div>
+                    <div>Відносна одиниця EM . Розмір формується відносно
+                        поточного
+                        або успадкованого розміру шрифту (font-size).
+                        1em дорівнює значенню font-size.
+                        <code> font-size: 1.5em;
+                            padding: 0.3333em;
+                            outline: 0.0667em solid rgb(87, 70, 70);</code>
+                    </div>
+                </div>
+                <div class="train__parent">
+                    <h2>Відносні одиниці vh, vw, svh, dvh, vmax, vmin</h2>
+                    <p>1vw — 1% ширини вʼюпорта тобто розмір від ширини вікна
+                        браузера</p>
+                    <p>1vh — 1% висоти в'юпорта, є проблеми з використанням на
+                        мобільних пристроях, а саме якщо вказати для блоку
+                        висоту 100vh,
+                        то знизу частину блоку буде накривати плашка меню яка є
+                        у
+                        браузерах на мобільних пристроях, тому краще
+                        використовувати
+                        100svh</p>
+                    <p>1svh (Static Viewport Height) — 1% мінімальної висоти
+                        в'юпорта
+                        100svh відповідає 100% висоти вікна перегляду, незалежно
+                        від
+                        його
+                        розміру. Це забезпечує, що елемент охоплює повну висоту
+                        вікна
+                        перегляду, створюючи ефект повного екрана (чудово
+                        підходить для
+                        мобільних пристроїв).</p>
+                    <p>1dvh (Dynamic Viewport Height) — 1% динамічної висоти
+                        в'юпорта
+                        (на телефонах враховує розмір шапки браузера)
+                        dvh автоматично налаштовується залежно від поточного
+                        стану
+                        елемента інтерфейсу. Коли елемент інтерфейсу
+                        розширюється,
+                        динамічне вікно перегляду дорівнює розміру малого вікна
+                        перегляду
+                        (SVH). Навпаки, коли елемент інтерфейсу згортається,
+                        динамічне
+                        вікно перегляду дорівнює розміру великого вікна
+                        перегляду
+                        (LVH)</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
