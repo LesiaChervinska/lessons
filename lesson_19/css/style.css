@@ -53,7 +53,7 @@ body {
 
 .hero__section {
   padding: 3.125rem 3.125rem 3.4375rem 3.125rem;
-  position: relative;
+
   z-index: 3;
 }
 
@@ -106,6 +106,7 @@ body {
   gap: 1.25rem;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .hero__img-box {
@@ -116,14 +117,12 @@ body {
 
 .hero__img-box::after {
   content: "";
-  background: url('../img/top-bg/02.avif') 50% 50%/150px 150px no-repeat;
+  background: url(../img/top-bg/02.avif) center / 150px 150px no-repeat;
   position: absolute;
-  top: 36%;
-  left: 46%;
+  top: 10.8125rem;
+  left: 47%;
   width: 150px;
   height: 150px;
-
-
 }
 
 .hero__images {
